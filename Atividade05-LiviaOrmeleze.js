@@ -19,9 +19,9 @@ var pessoa = idade >= 16 ? "Você pode votar!" : "Você não pode votar!";
 console.log(pessoa);
 
 console.log("------------------------------------------------------");
-var idade = 18;
+function votação(idade) {
 switch (true) {
-  case idade <= 15:
+  case idade  <= 15:
     console.log(`Você não pode votar!`);
     break;
   case idade >= 16 && idade < 18:
@@ -31,3 +31,5 @@ switch (true) {
     console.log(`Você pode votar!`);
     break;
 }
+}
+votação (18)
